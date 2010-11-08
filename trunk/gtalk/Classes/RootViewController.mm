@@ -89,8 +89,9 @@ static const int DEFAULT_PORT = 5222;
 
 - (void)_mainGtalkThread:(id)sender
 {
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];	
-	[self gtalk_main:(char*)name userpassword:(char*)password];
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	//you need to setup name and passwd manuelly here
+	//[self gtalk_main:(char*)name userpassword:(char*)password];
     [pool release];
 }
 
